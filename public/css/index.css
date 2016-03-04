@@ -82,29 +82,12 @@ html {overflow-y: scroll;}
 
 #container .menu_btn li .menu_img {
 	display: inline-block;
-	border-radius: 50%;
 	float: left;
 }
 
-#container .menu_btn li .menu_img.item_img1 {
-	height: 90px;
-	width: 90px;
-	border-radius: 50%;
-	background: url('../img/spirite.jpg') no-repeat -155px -20px;
-}
-
-#container .menu_btn li .menu_img.item_img2 {
-	height: 50px;
-	width: 50px;
-	border-radius: 50%;
-	background: url('../img/spirite.jpg') no-repeat -235px -30px;
-}
-
-#container .menu_btn li .menu_img.item_img3 {
-	height: 50px;
-	width: 50px;
-	border-radius: 50%;
-	background: url('../img/spirite.jpg') no-repeat -315px -30px;
+#container .menu_btn li .menu_img img {
+	width: 40%;
+	height: auto;
 }
 
 #container .menu_btn li .menu_desc {
