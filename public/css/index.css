@@ -17,6 +17,7 @@ html {overflow-y: scroll;}
 
 /*index.css start at this section*/
 /*header section of the page*/
+
 #header {
 	width: 100%;
 	background: #EE6363;
@@ -59,24 +60,20 @@ html {overflow-y: scroll;}
 
 #container .menu_btn>li{
 	margin-bottom: 20px;
-	background: red;
 	border-radius: 10px;
 	padding: 10px;
+	width: 100%;
 }
 
 #container .menu_btn li:first-child {
-	width: 100%;
 	background: #FFE4B5;
 }
 
 #container .menu_btn li:nth-child(2) {
-	width: 48.5%;
 	background: #d8bfd8;
 }
 
 #container .menu_btn li:last-child {
-	width: 48.5%;
-	margin-left: 3%;
 	background: #F08080;
 }
 
@@ -86,7 +83,7 @@ html {overflow-y: scroll;}
 }
 
 #container .menu_btn li .menu_img img {
-	width: 40%;
+	width: 20%;
 	height: auto;
 }
 
@@ -96,8 +93,13 @@ html {overflow-y: scroll;}
 	margin-left: 5px;
 }
 
+#container .menu_btn li:first-child .menu_desc {
+	float: left;
+	background: transparent;
+}
+
 #container .menu_btn li .menu_desc h2 {
-	font-size: 1em;
+	font-size: 1.5em;
 	font-weight: bold;
 }
 
@@ -105,6 +107,8 @@ html {overflow-y: scroll;}
 	font-size: 1em;
 	color: #575757;
 }
+
+/*footer section*/
 
 #footer {
 	position: fixed;
@@ -122,4 +126,46 @@ html {overflow-y: scroll;}
 
 #footer span:active {
 	text-decoration: none;
+}
+
+/*media query*/
+
+@media screen and (min-width: 370px) {
+	#container .menu_btn>li{
+		margin-bottom: 20px;
+		border-radius: 10px;
+		padding: 10px;
+		width: 100%;
+	}
+
+	#container .menu_btn li:first-child {
+		width: 100%;
+		background: #FFE4B5;
+	}
+
+	#container .menu_btn li:nth-child(2) {
+		width: 48.5%;
+		background: #d8bfd8;
+	}
+
+	#container .menu_btn li:last-child {
+		width: 48.5%;
+		margin-left: 3%;
+		background: #F08080;
+	}
+
+	#container .menu_btn li:first-child .menu_desc {
+		float: left;
+		background: transparent;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (min-width: 666px) {
+	#container .menu_btn li .menu_desc {
+		float: left;
+		background: transparent;
+		margin-left: 0px;
+		margin-top: 20px;
+	}
 }
