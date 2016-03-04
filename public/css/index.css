@@ -1,0 +1,142 @@
+/*index.css file*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:1.4em; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:1.4em; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:1.4em Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;}
+/* css common */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+/*index.css start at this section*/
+/*header section of the page*/
+#header {
+	width: 100%;
+	background: #EE6363;
+	height: 4em;
+	top: 0px;
+	position: fixed;
+	padding-top: 1em;
+	padding-bottom: 1em; 
+	text-align: center;
+}
+
+#header h1 {
+	font-size: 2em;
+	font-weight: bold;
+	color: #FFF;
+	display: inline-block;
+}
+
+#header .user_logo {
+	font-size: 2em;
+	color: #fff;
+	position: absolute;
+	right: 10px;
+	top: 0.5em;
+}
+
+
+/*container section of the page*/
+#container {
+	width: 95%;
+	margin: auto;
+	margin-top: 5em;
+}
+
+#container .menu_btn{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#container .menu_btn>li{
+	margin-bottom: 20px;
+	background: red;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+#container .menu_btn li:first-child {
+	width: 100%;
+	background: #FFE4B5;
+}
+
+#container .menu_btn li:nth-child(2) {
+	width: 48.5%;
+	background: #d8bfd8;
+}
+
+#container .menu_btn li:last-child {
+	width: 48.5%;
+	margin-left: 3%;
+	background: #F08080;
+}
+
+#container .menu_btn li .menu_img {
+	display: inline-block;
+	border-radius: 50%;
+	float: left;
+}
+
+#container .menu_btn li .menu_img.item_img1 {
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	background: url('../img/spirite.jpg') no-repeat -155px -20px;
+}
+
+#container .menu_btn li .menu_img.item_img2 {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background: url('../img/spirite.jpg') no-repeat -235px -30px;
+}
+
+#container .menu_btn li .menu_img.item_img3 {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background: url('../img/spirite.jpg') no-repeat -315px -30px;
+}
+
+#container .menu_btn li .menu_desc {
+	float: left;
+	background: transparent;
+	margin-left: 5px;
+}
+
+#container .menu_btn li .menu_desc h2 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#container .menu_btn li .menu_desc p {
+	font-size: 1em;
+	color: #575757;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0px;
+	background: #EE6363;
+	height: 3em;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+#footer span:visited {
+	text-decoration: none;
+}
+
+#footer span:active {
+	text-decoration: none;
+}

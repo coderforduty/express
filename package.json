@@ -1,0 +1,21 @@
+{
+  "name": "express-test",
+  "version": "0.0.0",
+  "description": "just a test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coderforduty/express.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/coderforduty/express/issues"
+  },
+  "dependencies": {
+    "express": "~4.13.4"
+  }
+}
