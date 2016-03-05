@@ -17,16 +17,17 @@ html {overflow-y: scroll;}
 
 /*index.css start at this section*/
 /*header section of the page*/
+body {
+	background: #bbb;
+}
 
 #header {
 	width: 100%;
-	background: #EE6363;
+	background: #444;
 	height: 4em;
 	top: 0px;
-	position: fixed;
 	padding-top: 1em;
 	padding-bottom: 1em; 
-	text-align: center;
 }
 
 #header h1 {
@@ -34,86 +35,116 @@ html {overflow-y: scroll;}
 	font-weight: bold;
 	color: #FFF;
 	display: inline-block;
+	float: left;
+	margin-left: 5%;
 }
 
 #header .user_logo {
 	font-size: 2em;
-	color: #fff;
-	position: absolute;
+	color: #EE6363;
+	display: block;
 	right: 10px;
-	top: 0.5em;
+	float: right;
 }
 
 
 /*container section of the page*/
 #container {
-	width: 95%;
 	margin: auto;
-	margin-top: 5em;
 }
 
-#container .menu_btn{
+#container header img {
 	width: 100%;
+	height: auto;
+}
+
+#container nav {
+	height: 100px;
+	background: #fff;
+	text-align: center;
+}
+
+#container nav>span {
+	font-size: 1.4em;
+	color: #444;
+}
+
+#container nav ul {
+	width: 60%;
+	height: 80px;
+	margin: auto;
+	display: flex;
+	flex-flow: row nowrap;
+	text-align: center;
+}
+
+#container nav ul li {
+	width: 33.3333%;
+	height: 100%;
+	margin-top: 10px;
+	text-align: center;
+	color: #aaa;
+}
+
+#container section {
+	margin: auto;
+	width: 95%;
+	margin-top: 10px;
+}
+
+#container section ul {
 	display: flex;
 	flex-flow: row wrap;
 }
 
-#container .menu_btn>li{
-	margin-bottom: 20px;
-	border-radius: 10px;
-	padding: 10px;
+#container section ul li {
+	background: red;
+	margin-bottom: 10px;
 	width: 100%;
 }
 
-#container .menu_btn li:first-child {
-	background: #FFE4B5;
-}
-
-#container .menu_btn li:nth-child(2) {
-	background: #d8bfd8;
-}
-
-#container .menu_btn li:last-child {
-	background: #F08080;
-}
-
-#container .menu_btn li .menu_img {
-	display: inline-block;
+#container section ul li img {
+	width: 40%;
 	float: left;
 }
 
-#container .menu_btn li .menu_img img {
-	width: 20%;
-	height: auto;
-}
-
-#container .menu_btn li .menu_desc {
+#container section ul li div {
+	padding: 10px;
 	float: left;
-	background: transparent;
-	margin-left: 5px;
+	width: 60%;
 }
 
-#container .menu_btn li:first-child .menu_desc {
-	float: left;
-	background: transparent;
-}
-
-#container .menu_btn li .menu_desc h2 {
-	font-size: 1.5em;
+#container section ul li div h3 {
 	font-weight: bold;
+	color: black;
+	font-size: 1.4em;
 }
 
-#container .menu_btn li .menu_desc p {
-	font-size: 1em;
-	color: #575757;
+#container section ul li:first-child {
+	background: #4169e1;
+}
+
+#container section ul li:nth-child(2) {
+	background: #EE6363;
+}
+
+#container section ul li:nth-child(2) img {
+	float: right;
+}
+
+#container section ul li:nth-child(2) div {
+	width: 60%;
+	margin-left: 0px;
+}
+
+#container section ul li:last-child {
+	background: #91c0cd;
 }
 
 /*footer section*/
 
 #footer {
-	position: fixed;
-	bottom: 0px;
-	background: #EE6363;
+	background: #444;
 	height: 3em;
 	width: 100%;
 	text-align: center;
@@ -130,42 +161,3 @@ html {overflow-y: scroll;}
 
 /*media query*/
 
-@media screen and (min-width: 370px) {
-	#container .menu_btn>li{
-		margin-bottom: 20px;
-		border-radius: 10px;
-		padding: 10px;
-		width: 100%;
-	}
-
-	#container .menu_btn li:first-child {
-		width: 100%;
-		background: #FFE4B5;
-	}
-
-	#container .menu_btn li:nth-child(2) {
-		width: 48.5%;
-		background: #d8bfd8;
-	}
-
-	#container .menu_btn li:last-child {
-		width: 48.5%;
-		margin-left: 3%;
-		background: #F08080;
-	}
-
-	#container .menu_btn li:first-child .menu_desc {
-		float: left;
-		background: transparent;
-		margin-top: 20px;
-	}
-}
-
-@media screen and (min-width: 666px) {
-	#container .menu_btn li .menu_desc {
-		float: left;
-		background: transparent;
-		margin-left: 0px;
-		margin-top: 20px;
-	}
-}
