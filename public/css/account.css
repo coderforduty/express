@@ -1,0 +1,73 @@
+/*index.css file*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:1.4em; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:1.4em; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:1.4em Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;}
+/* css common */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+/*header start*/
+
+body {
+	background: #eee;
+}
+
+header {
+	width: 100%;
+	background: #4169E1;
+	height: 2em;
+	top: 0px;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em; 
+	text-align: center;
+}
+
+header h1 {
+	font-weight: bold;
+	color: #000;
+	font-size: 1.4em;
+}
+
+header  span {
+	position: absolute;
+	left: 10px;
+	display: block;
+	background: #4F94CD;
+	border-radius: 5px;
+	color: black;
+	font-size: 1.4em;
+}
+
+section {
+	margin-top: 5px;
+}
+
+section ul li {
+	margin-bottom: 5px;
+	background: white;
+	padding: 10px;
+}
+
+section ul li h2 {
+	font-weight: bold;
+}
+
+section ul li p {
+	font-size: 0.9em;
+}
+
+section#notice {
+	text-align: center;
+	position: relative;
+	top: -300px;
+	display: none;
+}

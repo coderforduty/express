@@ -1,0 +1,67 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: '微软雅黑';
+}
+
+html, body {
+	height: 100%;
+	font-size: 1vw;
+	display: relative;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+#header {
+	padding: 10px;
+	width: 100%;
+	background: #EE6363;
+	z-index: 10;
+	position: fixed;
+	top: 0px;
+	font-size: 5vw;
+	color: white;
+	text-align: center;
+}
+
+#header span {
+	font-size: 5vw;
+	position: absolute;
+	left: 10px;
+	top: 5vw;
+}
+
+#body {
+	margin-top: 22vw;
+	z-index: 1000;
+}
+
+#body ul {
+	width: 90%;
+	margin: auto;
+}
+
+#body ul li {
+	margin-bottom: 5px;
+}
+
+#body ul li img {
+	width: 100%;
+}
+
+#bkgimg {
+	width: 100%;
+	min-height: 100%;
+	background: url('../img/index_bkg.jpg');
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	z-index: -1;
+}
