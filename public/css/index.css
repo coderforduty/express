@@ -37,6 +37,7 @@ body {
 	display: inline-block;
 	float: left;
 	margin-left: 5%;
+	font-family: "Arial";
 }
 
 #header .user_logo {
@@ -58,18 +59,18 @@ body {
 	height: auto;
 }
 
-#container nav {
+#container header div {
 	height: 100px;
 	background: #fff;
 	text-align: center;
 }
 
-#container nav>span {
+#container header div >span {
 	font-size: 1.4em;
 	color: #444;
 }
 
-#container nav ul {
+#container header div ul {
 	width: 60%;
 	height: 80px;
 	margin: auto;
@@ -78,7 +79,7 @@ body {
 	text-align: center;
 }
 
-#container nav ul li {
+#container header div ul li {
 	width: 33.3333%;
 	height: 100%;
 	margin-top: 10px;
